@@ -18,7 +18,7 @@ If you would prefer to use serialiazed C# pocos use the following:
 
 Screen shot below.
 
-![Demo MVC Web App output](./HalaMadrid.PNG "Demo MVC Web App output")
+![Demo MVC Web App output](./SampleScreenShot.PNG "Demo MVC Web App output")
 
 ## Demo project in GitHub
 
