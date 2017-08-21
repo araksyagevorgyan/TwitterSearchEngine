@@ -25,7 +25,7 @@ Currently it exposes search calls, returned as raw json (which can be serialized
 
 Screen shot below.
 
-![Demo MVC Web App output](./ScreenShot.PNG "Demo MVC Web App output")
+![Demo MVC Web App output](./HalaMadrid.PNG "Demo MVC Web App output")
 
 The idea stems from the following Stackoverflow question:
 
