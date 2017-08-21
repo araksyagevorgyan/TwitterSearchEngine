@@ -1,0 +1,69 @@
+﻿@model OAuthTwitterWrapper.SearchResult
+
+<title>Twitter Search</title>
+<div id="search_box">
+    <h1>Twitter Search</h1>
+    <input name="search_terms" id="search_name" autofocus="autofocus" value="@Model.SearchText" />
+    <input type="submit" id="search_button" value="Search" onclick="searchResult()" />
+</div>
+<div id="searchResult" name="searchResults">
+    <div class="tweet_timestamp" style="width:500px;">
+        <div class="tweet_row">
+            @if (Model.CountedTweets != null)
+            {
+                foreach (var h in Model.CountedTweets)
+                {
+                    <span class="retweets"><a href="https://twitter.com/hashtag/@h.Key" target="search">#@h.Key</a>, @h.Value :</span>
+                }
+            }
+        </div>
+    </div>
+    @if (Model.Search != null)
+    {
+        if (Model.Search.Results != null)
+        {
+            foreach (var t in Model.Search.Results)
+            {
+                <div class="tweet">
+                    <div class="tweet_left">
+                        <div class="tweet_image">
+                            <a href="https://twitter.com/@t.User.ScreenName">
+                                <img src="@t.User.ProfileImageUrl">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tweet_right">
+                        <div class="tweet_triangle"></div>
+                        <div class="tweet_row">
+                            <div class="tweet_username">
+                                <a href="https://twitter.com/@t.User.ScreenName" target="search">@t.User.ScreenName</a>
+                                <span class="tweet_name"></span>
+                            </div>
+                        </div>
+                        <div class="tweet_row">
+                            <div class="tweet_text">@t.Text</div>
+                        </div>
+                        <div class="tweet_row">
+                            <div class="tweet_timestamp">
+                                <img class="stream_bluebird" src="/bundles/images/bird_blue.png">
+                                <a href="http://twitter.com/@t.User.ScreenName/status/@t.id"
+                                   target="search" class="tweet_time_link">@t.CreatedAt.Remove(@t.CreatedAt.IndexOf("+"), 5)</a>
+                                <a href="http://twitter.com/intent/tweet?in_reply_to=@t.id"
+                                   target="search"><img src="/bundles/images/reply.png" class="imageof_reply"></a>
+                                <span class="retweets">@t.contributors</span>
+                                <a href="http://twitter.com/intent/retweet?tweet_id=@t.id"
+                                   target="search">
+                                    <img src="/bundles/images/retweet.png" class="imageof_retweet">
+                                </a>
+                                <span class="retweets">@t.retweet_count</span>
+                                <a href="http://twitter.com/intent/favorite?tweet_id=@t.id"
+                                   target="search"><img src="/bundles/images/favorite.png" class="imageof_favorite"></a>
+                                <span class="retweets">@t.favorite_count</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    }
+</div>

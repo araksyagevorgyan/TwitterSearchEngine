@@ -1,0 +1,16 @@
+﻿@model OAuthTwitterWrapper.SearchResult
+@{
+    ViewBag.Title = "Feed";
+    Layout = "~/Views/shared/_layout.cshtml";
+}
+
+@section Styles {
+    <link href="@Url.Content("~/bundles/css/search_client.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/bundles/css/tweet.css")" rel="stylesheet" type="text/css" />
+}
+ 
+@using (Html.BeginForm()){
+<div id="tweets" name="searchResults">
+    @{ Html.RenderPartial("Tweets");}</div>
+ }
+

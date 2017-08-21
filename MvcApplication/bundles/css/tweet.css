@@ -1,0 +1,116 @@
+﻿.tweet {
+    float: left;
+    padding-bottom: 8px;
+    position: relative;
+    width: 550px;
+}
+
+.tweet_left {
+    float: left;
+    width: 28px;
+    margin: 2px 4px 4px 2px;
+}
+
+    .tweet_left img {
+        border: 2px solid #fff;
+        margin-top: 1px;
+    }
+
+        .tweet_left img:hover {
+            border: 2px solid #C40001;
+        }
+
+.tweet_right {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #DADADA;
+    float: right;
+    position: relative;
+    width: 478px;
+    padding: 2px 5px 4px;
+}
+
+.tweet_triangle {
+    /*background: url(twitter_triangle.gif) no-repeat scroll 100% 0 transparent;*/
+    height: 13px;
+    left: -7px;
+    position: absolute;
+    top: 10px;
+    width: 7px;
+}
+
+.tweet_row {
+    line -height:15px;
+    position: relative;
+}
+
+.tweet_username {
+    color: #999;
+    font -size:14px;
+    margin -top:4px;
+}
+
+    .tweet_username a {
+        color: #333;
+        font -size:16px;
+        margin -right:4px;
+        font -weight:700;
+        text -decoration:none;
+    }
+
+.tweet_text {
+    font -size:14px;
+    color: #222;
+    line -height:20px;
+    word -wrap:break -word;
+    width: 100%;
+    margin: 0 0 3px;
+    padding: 0;
+}
+
+    .tweet_text a {
+        color: #5799DB;
+        text -decoration:none;
+    }
+
+.tweet_timestamp, .tweet_timestamp a {
+    color: #999;
+    font -size:12px;
+    text -decoration:none;
+    float: left;
+    display: inline;
+}
+
+.tweet_timestamp {
+    margin-right: 4px;
+}
+
+    .tweet_timestamp .retweets {
+        float: left;
+        margin-right: 6px;
+    }
+
+    .tweet_timestamp img {
+        float: left;
+        margin-left: 4px;
+        margin-right: 3px;
+        margin-top: -2px;
+    }
+
+    .tweet_timestamp .stream_bluebird {
+        margin-left: 0;
+        margin-right: 4px;
+    }
+
+    .tweet_timestamp .imageof_reply {
+        margin-right: 2px;
+    }
+
+    .tweet_timestamp .imageof_retweet {
+        margin-top: -1px;
+    }
+
+a:hover {
+    text-decoration: underline;
+}

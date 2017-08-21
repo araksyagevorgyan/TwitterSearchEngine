@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApplication", "MvcApplication\MvcApplication.csproj", "{A6336EDC-18D8-4D6A-8B10-7033C7613CA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oAuthTwitterWrapper", "oAuthTwitterWrapper\oAuthTwitterWrapper.csproj", "{8BB6CE98-A55B-495A-B8D2-37ECE69E2956}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6336EDC-18D8-4D6A-8B10-7033C7613CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6336EDC-18D8-4D6A-8B10-7033C7613CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6336EDC-18D8-4D6A-8B10-7033C7613CA7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A6336EDC-18D8-4D6A-8B10-7033C7613CA7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A6336EDC-18D8-4D6A-8B10-7033C7613CA7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A6336EDC-18D8-4D6A-8B10-7033C7613CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6336EDC-18D8-4D6A-8B10-7033C7613CA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6336EDC-18D8-4D6A-8B10-7033C7613CA7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A6336EDC-18D8-4D6A-8B10-7033C7613CA7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A6336EDC-18D8-4D6A-8B10-7033C7613CA7}.Release|x86.ActiveCfg = Release|Any CPU
+		{8BB6CE98-A55B-495A-B8D2-37ECE69E2956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BB6CE98-A55B-495A-B8D2-37ECE69E2956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BB6CE98-A55B-495A-B8D2-37ECE69E2956}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8BB6CE98-A55B-495A-B8D2-37ECE69E2956}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8BB6CE98-A55B-495A-B8D2-37ECE69E2956}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8BB6CE98-A55B-495A-B8D2-37ECE69E2956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BB6CE98-A55B-495A-B8D2-37ECE69E2956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BB6CE98-A55B-495A-B8D2-37ECE69E2956}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8BB6CE98-A55B-495A-B8D2-37ECE69E2956}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8BB6CE98-A55B-495A-B8D2-37ECE69E2956}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0235B42-7747-42B9-A2C8-462C9AB25375}
+	EndGlobalSection
+EndGlobal
