@@ -11,25 +11,13 @@ namespace MvcApplication.Controllers
 {
     public class HomeController : Controller
     {
-        //private IOAuthTwitterWrapper _oAuthTwitterWrapper;
-
-        //public HomeController(IOAuthTwitterWrapper oAuthTwitterWrapper)
-        //{
-        //	_oAuthTwitterWrapper = oAuthTwitterWrapper;
-        //}
-
         private IOAuthTwitterWrapper _oAuthTwitterWrapper;
 
         public HomeController()
         {
             _oAuthTwitterWrapper = new OAuthTwitterWrapper.OAuthTwitterWrapper();
         }
-
-        //public ActionResult Index()
-        //{
-        //    return View();
-        //}
-
+        
         public ActionResult SearchTweets(SearchResult searchResult)
         {
             ModelState.Clear();
@@ -37,7 +25,6 @@ namespace MvcApplication.Controllers
             {
                 searchResult = (SearchResult)Session["SearchResult"];
             }
-            //return View(searchResult);
             return View(searchResult);
         }
 
