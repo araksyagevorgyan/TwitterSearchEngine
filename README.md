@@ -18,10 +18,9 @@ If you would prefer to use serialiazed C# pocos use the following:
 
 Screen shot below.
 
-![Demo MVC Web App output](./SampleScreenShot.PNG "Demo MVC Web App output")
-
 ## Demo project in GitHub
 
+![Demo MVC Web App output](./SampleScreenShot.PNG "Demo MVC Web App output")
 ### Mvc application 
 This uses a controller action that returns the json and uses the same method to display them as above.
 It makes use of jQuery and this great library [twitter-text] (https://github.com/twitter/twitter-text-js). * Please note that I created this in VS2017.
